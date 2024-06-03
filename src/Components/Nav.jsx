@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../assets/images/logo.png";
 import "../scss/Nav.scss";
-import { Link } from "react-router-dom";
+import { Link ,useLocation } from "react-router-dom";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +30,8 @@ const Nav = () => {
     document.querySelector("section").style.overflow = "auto";
   };
 
+  const location = useLocation();
+
   return (
     <nav>
       <div id="logoContainer">
@@ -37,6 +39,8 @@ const Nav = () => {
           <img src={Logo} alt="logo-MTM" />
         </Link>
       </div>
+      {location.pathname === "/" && (
+        <>
       <ul id="Links">
         {/* Use Link component for navigation */}
         <li>
@@ -90,6 +94,7 @@ const Nav = () => {
         <div></div>
         <div></div>
       </div>
+      </> )}
     </nav>
   );
 };

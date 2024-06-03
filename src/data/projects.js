@@ -1,68 +1,28 @@
 const projectsData = [
-    {
-      id: 1,
-      title: "E-commerce website Vuejs/Larvel",
-      slug: "ecommerce-website-vuejs-laravel",
-      tag: "#Full Stack , #Laravel , #VUEJS",
-      intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime atque nostrum voluptatum, laudantium debitis eum explicabo deleniti deserunt in quia repellendus consectetur quas eaque incidunt, sequi dolorem dolorum aut inventore culpa, perspiciatis quidem! Sequi, quam dolores? Recusandae deleniti voluptatum voluptate blanditiis neque perspiciatis. Eius quibusdam nihil tenetur dolore tempore enim sint, minus facilis perspiciatis? Nulla sit, corrupti ducimus quam minima quia repellendus eum mollitia cupiditate quos. Magni, veritatis doloribus itaque quaerat rerum nemo similique placeat dolores reiciendis voluptatum incidunt, unde et doloremque dolorem rem inventore tempora laborum! Laudantium sint blanditiis dolorum asperiores nobis nam, recusandae at? Excepturi sed magnam totam voluptas temporibus id earum, ratione eligendi dolores eius, corporis fugiat ipsa! Sequi distinctio doloremque cum a nemo quia alias earum fugit, ipsa minus culpa saepe totam tenetur obcaecati necessitatibus unde id vel autem cumque rerum similique! Nihil quaerat dolorem veniam at. Asperiores exercitationem, laboriosam facilis, ipsum obcaecati dolores omnis impedit dolorem modi molestias adipisci magnam quis ad ut suscipit quia repellat non? Quia minima corrupti reprehenderit dicta optio voluptatum fugit tempora temporibus qui, fuga voluptatem consequuntur cumque ea eius a ab laudantium at autem, tempore debitis! Ullam culpa impedit architecto maxime minus minima dolorum et ducimus, necessitatibus sed. Velit voluptatem maiores repudiandae dolorum adipisci soluta labore dolores, voluptas mollitia sit iste atque aliquid inventore quod tenetur omnis amet hic ipsum asperiores doloremque in nam archi.",
-      coverImg: "https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png",
-      secondaryImg: "https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png",
-      description: '<h2>lorememporibus qui, fuga </h2> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime atque nostrum voluptatum, laudantium debitis eum explicabo deleniti deserunt in quia repellendus consectetur quas eaque incidunt, sequi dolorem dolorum aut inventore culpa, perspiciatis quidem! Sequi, quam dolores? Recusandae deleniti voluptatum voluptate blanditiis neque perspiciatis. Eius quibusdam nihil tenetur dolore tempore enim sint, minus facilis perspiciatis? Nulla sit, corrupti ducimus quam minima quia repellendus eum mollitia cupiditate quos. Magni, veritatis doloribus itaque quaerat rerum nemo similique placeat dolores reiciendis voluptatum incidunt, unde et doloremque dolorem rem inventore tempora laborum! Laudantium sint blanditiis dolorum asperiores nobis nam, recusandae at? Excepturi sed magnam totam voluptas temporibus id earum, ratione eligendi dolores eius, corporis fugiat ipsa! Sequi distinctio doloremque cum a nemo quia alias earum fugit, ipsa minus culpa saepe totam tenetur obcaecati necessitatibus unde id vel autem cumque rerum similique! Nihil quaerat dolorem veniam at. Asperiores exercitationem, laboriosam facilis, ipsum obcaecati dolores omnis impedit dolorem modi molestias adipisci magnam quis ad ut suscipit quia repellat non? Quia minima corrupti reprehenderit dicta optio voluptatum fugit tempora temporibus qui, fuga voluptatem consequuntur cumque ea eius a ab laudantium at autem, tempore debitis! Ullam culpa impedit architecto maxime minus minima dolorum et ducimus, necessitatibus sed. Velit voluptatem maiores repudiandae dolorum adipisci soluta labore dolores, voluptas mollitia sit iste atque aliquid inventore quod tenetur omnis amet hic ipsum asperiores doloremque in nam architecto! Enim excepturi itaque aut quasi, debitis hic explicabo autem rerum optio temporibus reprehenderit, maxime necessitatibus nulla. Maiores iure quo magnam deleniti praesentium placeat nesciuntomnis impedit dolorem modi molestias adipisci magnam quis ad ut suscipit quia repellat non? Quia minima corrupti reprehenderit dicta optio voluptatum fugit tempora temporibus qui, fuga voluptatem consequuntur cumque ea eius a ab laudantium at autem, tempore debitis! Ullam culpa impedit architecto maxime minus minima dolorum et ducimus, necessitatibus sed. Velit voluptatem maiores repudiandae dolorum adipisci soluta labore dolores, voluptas mollitia sit iste atque aliquid inventore quod tenetur omnis amet hic ipsum asperiores doloremque in nam architecto! Enim excepturi itaque aut quasi, debitis hic explicabo autem rerum optio temporibus reprehenderit, maxime necessitatibus nulla. Maiores iure quo magnam deleniti praesentium placeat nesciunt.</p>',
-      date: "27 June 2023",
-      hostLink: "https://example.com",
-      githubLink: "https://github.com/example",
-      iamges: ['https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png', 'https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png', 'https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png', 'https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png', 'https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png', 'https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png',]
-      ,
-      id: 2,
-      title: "E-commerce website Vuejs/Larvel",
-      slug: "ecommerce-website-vuejs-laravel",
-      tag: "#Full Stack , #Laravel , #VUEJS",
-      intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime atque nostrum voluptatum, laudantium debitis eum explicabo deleniti deserunt in quia repellendus consectetur quas eaque incidunt, sequi dolorem dolorum aut inventore culpa, perspiciatis quidem! Sequi, quam dolores? Recusandae deleniti voluptatum voluptate blanditiis neque perspiciatis. Eius quibusdam nihil tenetur dolore tempore enim sint, minus facilis perspiciatis? Nulla sit, corrupti ducimus quam minima quia repellendus eum mollitia cupiditate quos. Magni, veritatis doloribus itaque quaerat rerum nemo similique placeat dolores reiciendis voluptatum incidunt, unde et doloremque dolorem rem inventore tempora laborum! Laudantium sint blanditiis dolorum asperiores nobis nam, recusandae at? Excepturi sed magnam totam voluptas temporibus id earum, ratione eligendi dolores eius, corporis fugiat ipsa! Sequi distinctio doloremque cum a nemo quia alias earum fugit, ipsa minus culpa saepe totam tenetur obcaecati necessitatibus unde id vel autem cumque rerum similique! Nihil quaerat dolorem veniam at. Asperiores exercitationem, laboriosam facilis, ipsum obcaecati dolores omnis impedit dolorem modi molestias adipisci magnam quis ad ut suscipit quia repellat non? Quia minima corrupti reprehenderit dicta optio voluptatum fugit tempora temporibus qui, fuga voluptatem consequuntur cumque ea eius a ab laudantium at autem, tempore debitis! Ullam culpa impedit architecto maxime minus minima dolorum et ducimus, necessitatibus sed. Velit voluptatem maiores repudiandae dolorum adipisci soluta labore dolores, voluptas mollitia sit iste atque aliquid inventore quod tenetur omnis amet hic ipsum asperiores doloremque in nam archi.",
-      coverImg: "https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png",
-      description: '<h2>lorememporibus qui, fuga </h2> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime atque nostrum voluptatum, laudantium debitis eum explicabo deleniti deserunt in quia repellendus consectetur quas eaque incidunt, sequi dolorem dolorum aut inventore culpa, perspiciatis quidem! Sequi, quam dolores? Recusandae deleniti voluptatum voluptate blanditiis neque perspiciatis. Eius quibusdam nihil tenetur dolore tempore enim sint, minus facilis perspiciatis? Nulla sit, corrupti ducimus quam minima quia repellendus eum mollitia cupiditate quos. Magni, veritatis doloribus itaque quaerat rerum nemo similique placeat dolores reiciendis voluptatum incidunt, unde et doloremque dolorem rem inventore tempora laborum! Laudantium sint blanditiis dolorum asperiores nobis nam, recusandae at? Excepturi sed magnam totam voluptas temporibus id earum, ratione eligendi dolores eius, corporis fugiat ipsa! Sequi distinctio doloremque cum a nemo quia alias earum fugit, ipsa minus culpa saepe totam tenetur obcaecati necessitatibus unde id vel autem cumque rerum similique! Nihil quaerat dolorem veniam at. Asperiores exercitationem, laboriosam facilis, ipsum obcaecati dolores omnis impedit dolorem modi molestias adipisci magnam quis ad ut suscipit quia repellat non? Quia minima corrupti reprehenderit dicta optio voluptatum fugit tempora temporibus qui, fuga voluptatem consequuntur cumque ea eius a ab laudantium at autem, tempore debitis! Ullam culpa impedit architecto maxime minus minima dolorum et ducimus, necessitatibus sed. Velit voluptatem maiores repudiandae dolorum adipisci soluta labore dolores, voluptas mollitia sit iste atque aliquid inventore quod tenetur omnis amet hic ipsum asperiores doloremque in nam architecto! Enim excepturi itaque aut quasi, debitis hic explicabo autem rerum optio temporibus reprehenderit, maxime necessitatibus nulla. Maiores iure quo magnam deleniti praesentium placeat nesciuntomnis impedit dolorem modi molestias adipisci magnam quis ad ut suscipit quia repellat non? Quia minima corrupti reprehenderit dicta optio voluptatum fugit tempora temporibus qui, fuga voluptatem consequuntur cumque ea eius a ab laudantium at autem, tempore debitis! Ullam culpa impedit architecto maxime minus minima dolorum et ducimus, necessitatibus sed. Velit voluptatem maiores repudiandae dolorum adipisci soluta labore dolores, voluptas mollitia sit iste atque aliquid inventore quod tenetur omnis amet hic ipsum asperiores doloremque in nam architecto! Enim excepturi itaque aut quasi, debitis hic explicabo autem rerum optio temporibus reprehenderit, maxime necessitatibus nulla. Maiores iure quo magnam deleniti praesentium placeat nesciunt.</p>',
-      date: "27 June 2023",
-      hostLink: "https://example.com",
-      githubLink: "https://github.com/example",
-      iamges: ['https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png', 'https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png', 'https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png', 'https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png', 'https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png', 'https://genz-nextjs-v3.vercel.app/assets/imgs/page/healthy/img.png',]
-    },{
-      id: 2,
-      title: "Rock Paper Scissors Game",
-      slug: "rock-paper-scissors-game",
-      tag: "#HTML, #CSS, #JavaScript",
-      intro: "Welcome to our interactive Rock Paper Scissors game, meticulously crafted using HTML, CSS, and JavaScript. This project serves as a comprehensive demonstration of fundamental web development skills, featuring dynamic DOM manipulation, intuitive event handling, and engaging CSS animations. Whether you’re a beginner or looking to refine your coding techniques, this project offers a hands-on experience in building a fully functional web application.In this game, players can choose between rock, paper, or scissors, and face off against a computer opponent. The game’s logic is seamlessly implemented in JavaScript, providing instant feedback and displaying the results of each round. With each click, the interface updates in real-time, showcasing the power of DOM manipulation and the responsiveness of event-driven programming.Moreover, the visual appeal of the game is enhanced through carefully designed CSS animations. These animations not only make the game more enjoyable but also illustrate the use of keyframes and transitions in CSS By integrating these elements, the Rock Paper Scissors game exemplifies how web technologies can be combined to create an interactive and visually pleasing user experience.",
-      coverImg: "https://repository-images.githubusercontent.com/683681617/a6f55d46-d46c-4a8f-849d-a70cadc33f2b",
-      secondaryImg: "https://play-lh.googleusercontent.com/rfWOJQVBHoAZ_B43v0ySFlLmJBLtksVGAxGaFRh2ex4nOmNQ86qzG4sYWV63IKrXlvI",
-      description: `
-        <h2>Rock Paper Scissors Game</h2>
-        <p>This project is a classic implementation of the Rock Paper Scissors game. Users can play against the computer, which makes random choices.</p>
-  
-        <h2>Features</h2>
-        <ul>
-          <li><strong>User Interface:</strong> A simple and intuitive UI built with HTML and styled with CSS.</li>
-          <li><strong>Interactive Gameplay:</strong> Players can select rock, paper, or scissors, and the game will display the result.</li>
-          <li><strong>JavaScript Logic:</strong> The game logic is implemented in JavaScript, including random choice generation and determining the winner.</li>
-          <li><strong>Responsive Design:</strong> The layout adjusts for different screen sizes, making it playable on both desktop and mobile devices.</li>
-        </ul>
-        
-        <h2>How It Works</h2>
-        <p>Players select their choice by clicking on the respective button. The computer then randomly selects its choice. The game logic compares the player's choice with the computer's choice to determine the winner. The result is displayed on the screen.</p>
-  
-        <h2>Project Details</h2>
-        <p>The game is implemented using plain HTML, CSS, and JavaScript. CSS animations are used to enhance the user experience, and JavaScript handles the game logic and DOM manipulation.</p>
-      `,
-      date: "22 May 2024",
-      hostLink: "https://example.com",
-      githubLink: "https://github.com/example/rock-paper-scissors",
-      images: [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnWQ35kOkxbHgMarIr60DoUhzt9dxlOZTrQqz-jGKF5g&s',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9dxa49IjLaju7YtSnLPSB0tswFGI71SIWsXqHjUF3yLZhXRZcXCSbJMmph3Xte_9AgTM&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6faobeMyrRY56VGZPFZHhvlgaderkcPdK2zftYQiFuR6whbfTvLQxLCfaKV67sD26fk4&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnWQ35kOkxbHgMarIr60DoUhzt9dxlOZTrQqz-jGKF5g&s',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9dxa49IjLaju7YtSnLPSB0tswFGI71SIWsXqHjUF3yLZhXRZcXCSbJMmph3Xte_9AgTM&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6faobeMyrRY56VGZPFZHhvlgaderkcPdK2zftYQiFuR6whbfTvLQxLCfaKV67sD26fk4&usqp=CAU',
-      ]
-    }
-  
+  {
+    "id": 1,
+    "title": "Deverda - E-commerce Website",
+    "slug": "deverda-ecommerce-website-shopify",
+    "tag": "#Full Stack , #Shopify , #UI/UX",
+    "intro": "Deverda is a sophisticated e-commerce website developed for a cosmetics brand using Shopify, a leading CMS for commerce. This project allowed me to gain valuable experience with Shopify and its extensive capabilities. The main objective was to create the best possible UI/UX while also implementing user behavior tracking to ensure the website could be continuously updated to meet user needs.",
+    "coverImg": "../src/assets/projects/Deverda/lg.webp",
+    "secondaryImg": "../src/assets/projects/Deverda/lg.webp",
+    "description": "<h2>Deverda - E-commerce Website for a Cosmetics Brand</h2><p>Deverda is an e-commerce platform developed for a cosmetics brand, leveraging Shopify's robust CMS features. Shopify is renowned as a leading CMS for commerce, which provided a solid foundation for this project. Throughout the development process, I gained substantial experience in managing and optimizing this new CMS. My primary goal was to craft an exceptional user interface (UI) and user experience (UX). To achieve this, I focused on intuitive design and seamless navigation, ensuring customers have a pleasant shopping experience. Additionally, I implemented comprehensive user behavior tracking to gather insights and continually update the website based on user interactions and feedback. This approach ensures the platform remains responsive to the evolving needs of its users, ultimately enhancing customer satisfaction and engagement.</p>",
+    "date": "27 June 2023",
+    "hostLink": "https://deverda.com",
+    "githubLink": "",
+    "images": [
+      "../src/assets/projects/Deverda/deverda(8).jpg",
+      "../src/assets/projects/Deverda/deverda(1).jpg",
+      "../src/assets/projects/Deverda/deverda(2).jpg",
+      "../src/assets/projects/Deverda/deverda(3).jpg",
+      "../src/assets/projects/Deverda/deverda(4).jpg",
+      "../src/assets/projects/Deverda/deverda(5).jpg",
+      "../src/assets/projects/Deverda/deverda(6).jpg",
+      "../src/assets/projects/Deverda/deverda(7).jpg",
+      
+    ]
+  }
   ];
 
 export default projectsData;

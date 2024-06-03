@@ -30,31 +30,16 @@ const Project = () => {
         <div id="sp__box">
 
             <div className="single-project-section ">
+               
+                <img src={project.coverImg} className="project-cover " alt="image" />
+
+                <div className="p-des">
                 <h1 className="project-title ">
                     {project.title}
                 </h1>
-                <img src={project.coverImg} className="project-cover " alt="image" />
-
-                <div className="description ">
-                    <img src={project.secondaryImg} alt="image" />
-                    <p>
-                        {project.intro}
-                    </p>
-                    <div className="links">
-                        <Link to={project.hostLink} id="website" title="Visit Website">
-                            <i className="fa-solid fa-link"></i>
-                        </Link>
-                        <Link to={project.githubLink} id="github" title="Visit On Github">
-                            <i className="fa-brands fa-github-alt" ></i>
-                        </Link>
-                        <button id="gallery" title="Show Pics" onClick={scrollToGallery}>
-                            <GrGallery />
-                        </button>
-                    </div>
                 </div>
 
-                <div className="long-desc" dangerouslySetInnerHTML={{ __html: project.description }}></div>
-                <h1 id="gall">Gallery</h1>
+                <h1 id="gall">Showcase</h1>
                 <div className="P-wrapper" id="display" ref={displayRef}> 
                     {project.images && project.images.map((image, index) => (
                         <img key={index} src={image} alt={`Project image ${index + 1}`} />

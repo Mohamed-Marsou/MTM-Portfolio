@@ -6,9 +6,11 @@
     position: relative;
     color: $pColor;
     font-family: $ff;
-    h1,h2,h3,h4,h5,h6{
-        color: #02dffc;
+    h1,h2,h3,h4,h5,h6,#gall{
+        color: rgba(45, 149, 253, 0.931) ;
         padding: 15px 0 ;
+        font-size: 3rem;
+        text-transform: uppercase;
     }
 }
 .single-project-section {
@@ -26,80 +28,14 @@
         max-height: 35rem;
         object-fit: cover;
     }
-
-    .description {
-        width: 100%;
-        min-height: 300px;
-        margin: 2rem 0;
-        > img {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            object-fit: cover;
-            max-width: 100%;
-            clip-path: circle(45%);
-            shape-outside: circle(45%);
-            shape-margin: 20px;
-            float: left;
-        }
-        p {
-            cursor: pointer;
-        }
-        .links {
-            width: 100%;
-            height: 3rem;
-            margin-top: 2rem;
-            @include flex($jc: flex-end);
-            padding: 0 2rem;
-            a {
-                border-radius: 10px;
-                color: #fff;
-                padding: 0.8rem 1rem;
-                font-size: 0.8rem;
-                transition: 0.3s ease-in-out;
-                margin: 0 1rem 0 0;
-            }
-            #website {
-                background: $primaryColor;
-                &:hover {
-                    transform: translateY(-5px);
-                    background: #02dffc;
-                }
-            }
-            #github {
-                background: #165770;
-                &:hover {
-                    transform: translateY(-5px);
-                    background: #0780af;
-                }
-            }
-            button {
-                background: #72023a;
-                color: #fff;
-                border: none;
-                padding: 0.9rem 1.2rem;
-                border-radius: 10px;
-                cursor: pointer;
-                transition: 0.3s ease-in-out;
-                &:hover {
-                    transform: translateY(-5px);
-                    background: #dd0270;
-                }
-            }
-        }
-    }
-
-    .long-desc {
-        width: 100%;
-        min-height: 15rem;
-        h3,
-        h4 {
-            padding: 1rem;
-            font-size: 1.6rem;
-            color: #0780af;
-        }
-    }
     
+    .p-des{
+        border: 1px solid red;
+        width: 100%;
+        min-height: 10rem;
+        margin: 2rem 0;
+    }
+
     .P-wrapper {
         width: 100%;
         min-height: 15rem;
@@ -125,10 +61,7 @@
       }
 }
 
-#gall{
-    font-size: 3rem;
-    text-decoration: underline;
-}
+
 
 @media screen and (max-width: 768px) {
 

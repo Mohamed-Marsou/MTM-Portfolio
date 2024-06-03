@@ -1,16 +1,16 @@
-@import './_variables';
-*{
+@import "./_variables";
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    a{
+    a {
         color: $pColor;
     }
 }
 
-.ReactApp{
+.ReactApp {
     overflow-x: hidden;
 }
 .loader-container {
@@ -25,8 +25,8 @@
         overflow: hidden;
         white-space: nowrap;
         font-family: $ff;
-        border: 4px solid #f8184c;
         padding: 0 10px;
+
         span {
             opacity: 0;
             &.visible {
@@ -35,34 +35,35 @@
         }
     }
 
-    .wrapper-animation{
+    .wrapper-animation {
         width: 60vw;
         height: 60vh;
         position: relative;
-        img{
+        img {
             width: 30vw;
             opacity: 0;
+
             &.visible {
                 animation: show 1s forwards;
             }
         }
-        #one{
+        #one {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
-        #two{
+        #two {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
-        #three{
+        #three {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
     }
 }
@@ -75,5 +76,15 @@
 @keyframes write {
     to {
         opacity: 1;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrapper-animation {
+        width: 60vw;
+        height: 60vh;
+        position: relative;
+        img {
+            width: 60vw !important;
+        }
     }
 }

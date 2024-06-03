@@ -1,8 +1,24 @@
+import React, { useState, useEffect } from "react";
 import '../scss/Projects.scss';
 import { Link } from 'react-router-dom';
-import DATA from '../data/projects'
+import DATA from '../data/projects';
+import Loader from './sectionLoader.jsx';
 
 const Projects = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <div id="projects-container">
       <div className="subs-wrapper">
@@ -38,16 +54,18 @@ const Projects = () => {
             <div className="date_extra-links">
               <p className="project-date">{project.date}</p>
               <div className="project-links">
-                <a href={project.externalLink} className="project-link">
+                <Link href={project.externalLink} className="project-link" target="_blank" rel="noopener noreferrer">
                   <i className="fa-solid fa-link"></i>
-                </a>
-                <a href={project.githubLink} className="project-link">
+                </Link>
+                <Link href={project.githubLink} className="project-link" target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-github-alt"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="full-screen-view">
-              <i className="fa-solid fa-eye"></i>
+              <Link to={`/project/${project.slug}`} >
+                <i className="fa-solid fa-eye"></i>
+              </Link>
             </div>
           </div>
         ))}
