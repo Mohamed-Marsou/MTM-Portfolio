@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+
 import '../scss/Projects.scss';
 import { Link } from 'react-router-dom';
 import DATA from '../data/projects';
@@ -6,7 +9,9 @@ import Loader from './sectionLoader.jsx';
 
 const Projects = () => {
   const [loading, setLoading] = useState(true);
-
+  const form = useRef(null);
+  const [email, setEmail] = useState('');
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
@@ -19,15 +24,43 @@ const Projects = () => {
     return <Loader />;
   }
 
+  
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_lm4juau',
+      'template_3n8awzg',
+      form.current,
+      'koPF8_4VC7XT9wEw5'
+    ).then(
+      (result) => {
+        console.log('SUCCESS!', result.text);
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+      }
+    );
+    // Clear form fields after submission (optional)
+    setEmail('');
+
+  };
   return (
     <div id="projects-container">
       <div className="subs-wrapper">
         <p>Be the first to know! Subscribe for the latest news, projects and more ...</p>
         <div className="formWrapper">
-          <input type="email" placeholder='Email Address' />
-          <button>
-            Subscribe
-          </button>
+
+          <form> ref={form} onSubmit={sendEmail}
+            <input type="email" name="user_email" placeholder='Email Address' value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required />
+            <button>
+              Subscribe
+            </button>
+          </form>
+
         </div>
       </div>
 
