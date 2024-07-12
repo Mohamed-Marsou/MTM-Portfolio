@@ -13,25 +13,24 @@ const projectsData = [
     
     Developing Deverda, an advanced e-commerce site for a high-profile cosmetics brand, involved harnessing the power of Shopify, an industry-leading CMS for commerce. Through this project, I gained profound insights into Shopify's robust functionalities. The core objective was to engineer a superior UI/UX, incorporating user behavior tracking to ensure the website remains dynamically responsive to evolving user needs.`,
 
-    "coverImg": "../src/assets/projects/Deverda/lg.webp",
-    "secondaryImg": "../src/assets/projects/Deverda/lg.webp",
+    "coverImg": "../src/assets/projects/deverda/logo.jpg",
+    "secondaryImg": "../src/assets/projects/deverda/logo.jpg",
     "date": "27 June 2023",
     "hostLink": "https://deverda.com",
     "githubLink": "",
     "techIcons":
     [
         "../src/assets/images/icons/icons8-shopify-48.png", 
-        "../src/assets/images/icons/hotjar.png", 
     ],
     "images": [
-      "../src/assets/projects/Deverda/deverda(8).jpg",
-      "../src/assets/projects/Deverda/deverda(4).jpg",
-      "../src/assets/projects/Deverda/deverda(1).jpg",
-      "../src/assets/projects/Deverda/deverda(2).jpg",
-      "../src/assets/projects/Deverda/deverda(3).jpg",
-      "../src/assets/projects/Deverda/deverda(5).jpg",
-      "../src/assets/projects/Deverda/deverda(6).jpg",
-      "../src/assets/projects/Deverda/deverda(7).jpg",
+      "../src/assets/projects/Deverda/deverda8.jpg",
+      "../src/assets/projects/Deverda/deverda4.jpg",
+      "../src/assets/projects/Deverda/deverda1.jpg",
+      "../src/assets/projects/Deverda/deverda2.jpg",
+      "../src/assets/projects/Deverda/deverda3.jpg",
+      "../src/assets/projects/Deverda/deverda5.jpg",
+      "../src/assets/projects/Deverda/deverda6.jpg",
+      "../src/assets/projects/Deverda/deverda7.jpg",
       
     ]
   }
