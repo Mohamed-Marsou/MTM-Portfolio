@@ -14,8 +14,8 @@ const projectsData = [
     
     Developing Deverda, an advanced e-commerce site for a high-profile cosmetics brand, involved harnessing the power of Shopify, an industry-leading CMS for commerce. Through this project, I gained profound insights into Shopify's robust functionalities. The core objective was to engineer a superior UI/UX, incorporating user behavior tracking to ensure the website remains dynamically responsive to evolving user needs.`,
 
-    coverImg: "../assets/projects/deverda/logo.jpg",
-    secondaryImg: "../assets/projects/deverda/logo.jpg",
+    coverImg: "../assets/projects/easytech/picone.webp",
+    secondaryImg: "../assets/projects/easytech/picone.webp",
     date: "27 June 2023",
     hostLink: "https://deverda.com",
     githubLink: "",
