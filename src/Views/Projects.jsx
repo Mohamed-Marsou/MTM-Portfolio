@@ -7,7 +7,10 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 
-import ScrollToTop from "../js/scrollToTop";
+import ScrollToTop from "../js/scrollToTop"
+import DATA from '../data/projects';
+import { Link } from 'react-router-dom';
+
 const Projects = () => {
   return (
     <div className="Projects-container-box">
@@ -32,95 +35,20 @@ const Projects = () => {
       </div>
 
       <div className="p-container">
-        <div className="ph-container">
-          <div className="p-box-xl">
-            <img
-              src="https://genz-nextjs-v3.vercel.app/assets/imgs/page/travel-tip/news2.png"
-              alt=""
-            />
 
-            <b>
-              <a href="#">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-              </a>
-            </b>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error est
-              doloremque corrupti et aut. Consequuntur officia tempora possimus
-              debitis? Nesciunt pariatur a quas dolores laudantium!
-            </p>
-            <div className="links">
-              <FaExternalLinkAlt />
-              <SiGithub />
-            </div>
-          </div>
-          <div className="p-box-xl">
-            <img
-              src="https://genz-nextjs-v3.vercel.app/assets/imgs/page/travel-tip/news2.png"
-              alt=""
-            />
+        {/* Mapping through fake project data */}
+        {DATA.map((project, index) => (
 
-            <b>
-              <a href="#">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-              </a>
-            </b>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error est
-              doloremque corrupti et aut. Consequuntur officia tempora possimus
-              debitis? Nesciunt pariatur a quas dolores laudantium!
-            </p>
-            <div className="links">
-              <FaExternalLinkAlt />
-              <SiGithub />
-            </div>
-          </div>
-        </div>
-
-        <div className="pb-container">
-          <div>
+          <div className="project-bx">
             <div className="p-box">
-              <img
-                src="https://genz-nextjs-v3.vercel.app/assets/imgs/page/travel-tip/news2.png"
-                alt=""
-              />
+              <Link to={`/project/${project.slug}`} className="project-link">
+                <img src={project.coverImg} alt={project.slug} className="project-image c" />
+              </Link>
 
               <b>
-                <a href="#">
-                  Lorem ipsum dolor sit amet consectetur adipisicing.
-                </a>
-              </b>
-              <div className="links">
-                <FaExternalLinkAlt />
-                <SiGithub />
-              </div>
-            </div>
-            <div className="p-box">
-              <img
-                src="https://genz-nextjs-v3.vercel.app/assets/imgs/page/travel-tip/news2.png"
-                alt=""
-              />
-
-              <b>
-                <a href="#">
-                  Lorem ipsum dolor sit amet consectetur adipisicing.
-                </a>
-              </b>
-              <div className="links">
-                <FaExternalLinkAlt />
-                <SiGithub />
-              </div>
-            </div>
-            <div className="p-box">
-              <img
-                src="https://genz-nextjs-v3.vercel.app/assets/imgs/page/travel-tip/news2.png"
-                alt=""
-              />
-
-              <b>
-                <a href="#">
-                  Lorem ipsum dolor sit amet consectetur adipisicing.
-                </a>
+                <Link to={`/project/${project.slug}`}>
+                  {project.title}
+                </Link>
               </b>
               <div className="links">
                 <FaExternalLinkAlt />
@@ -128,9 +56,32 @@ const Projects = () => {
               </div>
             </div>
           </div>
+        ))}
+        {/* <div className="pb-container">
+            <div>
+        {DATA.map((project, index) => (
+              <div className="p-box">
+                <Link to={`/project/${project.slug}`} className="project-link">
+                <img src={project.coverImg} alt={project.slug} className="project-image c" />
+            </Link>
 
-          <div></div>
-        </div>
+                <b>
+                  <Link to={`/project/${project.slug}`}>
+                  {project.title}
+                  </Link>
+                </b>
+                <div className="links">
+                  <FaExternalLinkAlt />
+                  <SiGithub />
+                </div>
+              </div>
+        
+        ))}
+            </div>
+            
+            <div></div>
+            </div> */}
+
       </div>
     </div>
   );

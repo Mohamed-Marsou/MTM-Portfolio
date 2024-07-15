@@ -37,7 +37,7 @@ const Projects = () => {
         </header>
 
         {/* Mapping through fake project data */}
-        {DATA.map((project, index) => (
+        {DATA.slice(0, 3).map((project, index) => (
           <div key={index} className="project-main-box">
             <Link to={`/project/${project.slug}`} className="project-link">
               <img src={project.coverImg} alt={project.slug} className="project-image c" />
