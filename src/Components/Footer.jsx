@@ -1,5 +1,6 @@
 import React from "react";
 import "../scss/Footer.scss";
+import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -60,16 +61,16 @@ const Footer = () => {
           </button>
         </form>
         <div className="s-m-icons">
-          <a href="#">
+          <Link to="https://www.facebook.com/profile.php?id=100084199696274">
             <FaSquareFacebook />
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="https://www.instagram.com/mtm__4l?igsh=aWZjNGh5NmFmYzdk">
             <FaInstagramSquare />
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="https://www.linkedin.com/in/mohamed-marsou-0b8b1a247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
             <IoLogoLinkedin />
-          </a>
-          <a href="#">
+          </Link>
+          <a href="mailto:marsoumtm@gmail.com" className="email-link">
             <MdEmail />
           </a>
         </div>
