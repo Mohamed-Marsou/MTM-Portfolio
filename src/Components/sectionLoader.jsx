@@ -4,7 +4,7 @@ import '../scss/Loader.scss';
 const Loader = () => {
     return (
         <section className="global-loader-container">
-            <span class="loader"></span>
+            <span className="loader"></span>
         </section>
     );
 };

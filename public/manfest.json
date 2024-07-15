@@ -1,0 +1,10 @@
+{
+    "name": "MTM Portfolio",
+    "short_name": "MTM",
+    "description": "Explore Mohamed's portfolio showcasing coding projects, web development, and software applications.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a192f",
+    "theme_color": "#3498db"
+  }
+  

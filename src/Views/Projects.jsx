@@ -10,32 +10,9 @@ import { SiGithub } from "react-icons/si";
 import ScrollToTop from "../js/scrollToTop"
 import DATA from '../data/projects';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 const Projects = () => {
   return (
     <div className="Projects-container-box">
-    <Helmet>
-      <title>Coding Projects - MTM</title>
-      <meta name="description" content="Explore Mohamed's coding projects, showcasing various skills and technologies. Discover web development, software applications, and more." />
-      <meta name="keywords" content="coding projects, web development, software applications, React projects, JavaScript projects, MTM" />
-      <meta name="author" content="Mohamed" />
-      <meta name="robots" content="index, follow" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="theme-color" content="#0a192f" />
-      <link rel="canonical" href="https://mtm-portfolio.onrender.com/projects" />
-      <link rel="icon" href="/favicon.ico" />
-      <meta property="og:title" content="Coding Projects - Mohamed" />
-      <meta property="og:description" content="Explore Mohamed's coding projects, showcasing various skills and technologies. Discover web development, software applications, and more." />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://mtm-portfolio.onrender.com/projects" />
-      <meta property="og:image" content="https://mtm-portfolio.onrender.com/author.jpg" />
-      <meta property="og:site_name" content="Mohamed's Portfolio" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Coding Projects - Mohamed" />
-      <meta name="twitter:description" content="Explore Mohamed's coding projects, showcasing various skills and technologies. Discover web development, software applications, and more." />
-      <meta name="twitter:image" content="https://mtm-portfolio.onrender.com/author.jpg" />
-    </Helmet>
-
       <ScrollToTop />
       <div className="pp-header">
         <img src={author} alt="author" />
@@ -60,13 +37,11 @@ const Projects = () => {
 
         {/* Mapping through fake project data */}
         {DATA.map((project, index) => (
-
-          <div className="project-bx">
+          <div className="project-bx" key={index}>
             <div className="p-box">
               <Link to={`/project/${project.slug}`} className="project-link">
                 <img src={project.coverImg} alt={project.slug} className="project-image c" />
               </Link>
-
               <b>
                 <Link to={`/project/${project.slug}`}>
                   {project.title}
@@ -79,6 +54,7 @@ const Projects = () => {
             </div>
           </div>
         ))}
+
 
       </div>
     </div>
