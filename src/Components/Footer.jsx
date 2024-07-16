@@ -1,4 +1,7 @@
 import React from "react";
+import { useRef , useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 import "../scss/Footer.scss";
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
@@ -8,6 +11,32 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 const Footer = () => {
+  const form = useRef(null);
+  const [email, setEmail] = useState('');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_lm4juau',
+      'template_3n8awzg',
+      form.current,
+      'koPF8_4VC7XT9wEw5'
+    ).then(
+      (result) => {
+        console.log('SUCCESS!', result.text);
+        alert('Email sent successfully!');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+        alert('Failed to send email. Please try again.');
+      }
+    );
+
+    // Clear form fields after submission 
+    setEmail('');
+  };
   const currentYear = new Date().getFullYear();
   return (
     <footer>
@@ -52,10 +81,16 @@ const Footer = () => {
           Stay ahead in the world of web development. Join us for inspiring
           stories, expert insights, and the latest trends
         </p>
-        <form>
-          <input type="text" name="name" placeholder="Name" />
-          <input type="email" name="email" placeholder="Email" />
-          <button>
+        <form ref={form} onSubmit={sendEmail}>
+        <input
+              type="email"
+              placeholder="Email address"
+              name="user_email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          <button type="submit">
             SUBSCRIBE
             <FaLongArrowAltRight />
           </button>

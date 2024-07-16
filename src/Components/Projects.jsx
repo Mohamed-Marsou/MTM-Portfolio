@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from "react";
-import '../scss/Projects.scss';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import DATA from '../data/projects';
 import Loader from './sectionLoader.jsx';
+import '../scss/Projects.scss';
 
 const Projects = () => {
   const [loading, setLoading] = useState(true);
-
+  const form = useRef(null);
+  const [email, setEmail] = useState('');
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1500);
-
+   
     return () => clearTimeout(timer);
   }, []);
 
@@ -19,15 +22,48 @@ const Projects = () => {
     return <Loader />;
   }
 
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_lm4juau',
+      'template_3n8awzg',
+      form.current,
+      'koPF8_4VC7XT9wEw5'
+    ).then(
+      (result) => {
+        console.log('SUCCESS!', result.text);
+        alert('Email sent successfully!');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+        alert('Failed to send email. Please try again.');
+      }
+    );
+
+    // Clear form fields after submission 
+    setEmail('');
+  };
   return (
     <div id="projects-container">
       <div className="subs-wrapper">
         <p>Be the first to know! Subscribe for the latest news, projects and more ...</p>
         <div className="formWrapper">
-          <input type="email" placeholder='Email Address' />
-          <button>
-            Subscribe
-          </button>
+          <form ref={form} onSubmit={sendEmail} >
+            <input
+              type="email"
+              placeholder="Email address"
+              name="user_email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
 
@@ -36,9 +72,8 @@ const Projects = () => {
           <p>Some Things I've Built</p>
         </header>
 
-        {/* Mapping through fake project data */}
         {DATA.slice(0, 3).map((project, index) => (
-          <div key={index} className="project-main-box">
+          <div key={index} className="project-main-box" >
             <Link to={`/project/${project.slug}`} className="project-link">
               <img src={project.coverImg} alt={project.slug} className="project-image c" />
             </Link>

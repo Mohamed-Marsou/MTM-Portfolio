@@ -6,12 +6,14 @@
     position: relative;
     color: $pColor;
     font-family: $ff;
+
     h1,h2,h3,h4,h5,h6,#gall{
         color: rgba(45, 149, 253, 0.931) ;
         padding: 15px 0 ;
         font-size: 3rem;
         text-transform: uppercase;
     }
+
 }
 .single-project-section {
     width: 80%;
@@ -64,7 +66,7 @@
     .urls{
         width: 100%;
         min-height: 5rem;
-        border-bottom: 1px dotted rgb(0, 119, 255);
+        border-bottom: 2px solid rgb(0, 119, 255);
         margin: 1rem 0;
     }
     .P-wrapper {
@@ -75,6 +77,7 @@
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 1rem;
         padding: 2rem 0;
+        position: relative;
         > img {
           width: 100%;
           height: 300px;
@@ -82,17 +85,60 @@
           transition: .3s ease-in;
           opacity: .8;
           object-fit: cover;
-          cursor: pointer;
+          cursor: zoom-in;
       
           &:hover {
             opacity: 1;
             filter: blur(0) !important;
           }
         }
+
+      
       }
 }
 
+.images-box-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
 
+    .cls-btn{
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+        span{
+            font-size: 2.5rem;
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+    .imgs-wg{
+        width: 55%;
+        img{
+            width: 100%;
+            margin: 1rem 0;
+        }
+    }
+}
+.img-prev
+{
+    filter: blur(2px);
+    overflow-y: hidden;
+
+}
+.show-imgs
+{
+    display: flex !important;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -138,6 +184,17 @@
         }
     }
 
+    .images-box-container {
+    
+        .imgs-wg{
+            width: 90%;
+            margin-top: 4rem;
+            img{
+                width: 100%;
+                margin: 1rem 0;
+            }
+        }
+    }
 }
 @media screen and (max-width: 425px) {
 

@@ -28,35 +28,44 @@
             height: 3.7rem;
             border: 1px solid $borderColor;
             border-radius: 10px;
-            display: flex;
-            align-items: center;
             background: #55555528;
             margin: 0 auto;
-            > input {
-                width: 80%;
+
+            form {
+                width: 100%;
                 height: 100%;
-                border: none;
-                padding: 0 20px;
-                background: transparent;
-                color: $hColor;
-                font-size: 1rem;
-                outline: none;
-            }
-            > button {
-                width: 15%;
-                height: 2.8rem;
-                margin-left: 1rem;
-                border: none;
-                font-size: 95%;
-                color: $hColor;
-                background: #00a2fffc;
-                background: linear-gradient(150deg, rgba(34, 192, 195, 0.931) 0%, rgba(45, 149, 253, 0.931) 100%);
-                border-radius: 10px;
-                cursor: pointer;
-                text-transform: uppercase;
-                &:hover {
-                    background: linear-gradient(85deg, rgba(34, 192, 195, 0.985) 0%, rgba(13, 133, 253, 0.983) 100%);
-                    transform: scale(1.01);
+                display: flex;
+                align-items: center;
+                > input {
+                    width: 80%;
+                    height: 100%;
+                    border: none;
+                    padding: 0 20px;
+                    background: transparent;
+                    color: $hColor;
+                    font-size: 1rem;
+                    outline: none;
+                }
+                > button {
+                    width: 15%;
+                    height: 2.8rem;
+                    margin-left: 1rem;
+                    border: none;
+                    font-size: 95%;
+                    color: $hColor;
+                    background: #00a2fffc;
+                    background: linear-gradient(150deg, rgba(34, 192, 195, 0.931) 0%, rgba(45, 149, 253, 0.931) 100%);
+                    border-radius: 10px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    &:hover {
+                        background: linear-gradient(
+                            85deg,
+                            rgba(34, 192, 195, 0.985) 0%,
+                            rgba(13, 133, 253, 0.983) 100%
+                        );
+                        transform: scale(1.01);
+                    }
                 }
             }
         }
@@ -91,6 +100,7 @@
             padding: 5px 0;
             position: relative;
             transition: 0.3s ease-in-out;
+            
             &:hover {
                 border: 1px #ffffff8f solid;
                 i {
@@ -221,14 +231,15 @@
                 width: 100% !important;
                 border-radius: 0;
                 margin: 0.5rem auto;
-
-                > input {
-                    width: 80%;
-                }
-                > button {
-                    width: 20%;
-                    height: 100%;
-                    border-radius: 0 !important;
+                form {
+                    > input {
+                        width: 80%;
+                    }
+                    > button {
+                        width: 20%;
+                        height: 100%;
+                        border-radius: 0 !important;
+                    }
                 }
             }
         }
@@ -261,13 +272,19 @@
             }
         }
         .project-boxes {
-            header > p
-            {
-               font-size: 2rem;
-            } 
+            header > p {
+                font-size: 2rem;
+            }
             .project-main-box {
                 width: 100%;
                 margin: 5px;
+                height: fit-content !important ;
+
+                img {
+                    height: fit-content !important ;
+                    object-fit: contain !important;
+                    margin-bottom: 2rem;
+                }
             }
         }
 
@@ -283,68 +300,74 @@
 @media screen and (max-width: 350px) {
     #projects-container {
         .subs-wrapper {
-            p{
+            p {
                 padding: 0;
             }
             > div {
-                width: 100% !important;
-                height: 3rem;
-                > button {
-                    width: 30%;
-                    font-size: 3vw;
+                form {
+                    width: 100% !important;
+                    height: 3rem;
+                    > button {
+                        width: 30%;
+                        font-size: 3vw;
+                    }
                 }
             }
         }
         .project-boxes {
-            
             .project-main-box {
                 width: 100%;
-                margin: .5rem 0px ;
+                margin: 0.5rem 0px;
                 height: fit-content;
                 border: none;
-                border-radius: 0 0 0 0 ;
+                border-radius: 0 0 0 0;
             }
         }
     }
 }
-// ! move to a file 
-.loader-comp-container{
+// ! move to a file
+.loader-comp-container {
     width: 100%;
     height: 50vh;
     @include flex();
 
-.comp-loader {
-    width: 4.8px;
-    height: 4.8px;
-    display: block;
-    margin: 20px auto;
-    position: relative;
-    border-radius: 4px;
-    color: #48b9fafc;
-    background: currentColor;
-    box-sizing: border-box;
-    animation: animloader 0.3s 0.3s linear infinite alternate;
-  }
-  .comp-loader::after,
-  .comp-loader::before {
-    content: '';  
-    box-sizing: border-box;
-    width: 4.8px;
-    height: 4.8px;
-    border-radius: 4px;
-    background: currentColor;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 15px;
-    animation: animloader 0.3s 0.45s linear infinite alternate;
-  }
-  .comp-loader::after {
-      top: -15px;
-      animation-delay: 0s;
-  }
+    .comp-loader {
+        width: 4.8px;
+        height: 4.8px;
+        display: block;
+        margin: 20px auto;
+        position: relative;
+        border-radius: 4px;
+        color: #48b9fafc;
+        background: currentColor;
+        box-sizing: border-box;
+        animation: animloader 0.3s 0.3s linear infinite alternate;
+    }
+    .comp-loader::after,
+    .comp-loader::before {
+        content: "";
+        box-sizing: border-box;
+        width: 4.8px;
+        height: 4.8px;
+        border-radius: 4px;
+        background: currentColor;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 15px;
+        animation: animloader 0.3s 0.45s linear infinite alternate;
+    }
+    .comp-loader::after {
+        top: -15px;
+        animation-delay: 0s;
+    }
 }
-  @keyframes animloader {
-      0% { width: 4.8px }
-      100% { width: 48px}
-  }
+@keyframes animloader {
+    0% {
+        width: 4.8px;
+    }
+    100% {
+        width: 48px;
+    }
+}
+

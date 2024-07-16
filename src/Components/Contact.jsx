@@ -23,13 +23,16 @@ const Contact = () => {
         ).then(
           (result) => {
             console.log('SUCCESS!', result.text);
+            alert('Email sent successfully!');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           },
           (error) => {
             console.log('FAILED...', error.text);
+            alert('Failed to send email. Please try again.');
           }
         );
       
-        // Clear form fields after submission (optional)
+        // Clear form fields after submission 
         setName('');
         setEmail('');
         setSubject('');

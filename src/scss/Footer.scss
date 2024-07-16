@@ -82,11 +82,13 @@ footer {
             padding: 0 1rem;
             > input {
                 margin: 0.5rem 0;
+                padding: 20px 8px;
                 height: 2rem;
                 background: transparent;
                 border: none;
                 color: #fff;
                 border-bottom: 1px solid $pColor;
+
             }
             > button {
                 width: 8rem;
