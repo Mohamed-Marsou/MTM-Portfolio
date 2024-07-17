@@ -34,7 +34,7 @@ const Projects = () => {
     ).then(
       (result) => {
         console.log('SUCCESS!', result.text);
-        alert('Email sent successfully!');
+        alert('Your Details has been sent successfully! Thank you for getting in touch.');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       },
       (error) => {

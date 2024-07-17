@@ -42,7 +42,6 @@ const Nav = () => {
       {location.pathname === "/" && (
         <>
       <ul id="Links">
-        {/* Use Link component for navigation */}
         <li>
           <p onClick={() => scrollToSection("about_me")}>About</p>
         </li>

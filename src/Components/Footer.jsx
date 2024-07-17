@@ -1,5 +1,5 @@
 import React from "react";
-import { useRef , useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import "../scss/Footer.scss";
@@ -25,7 +25,7 @@ const Footer = () => {
     ).then(
       (result) => {
         console.log('SUCCESS!', result.text);
-        alert('Email sent successfully!');
+        alert('Your Details has been sent successfully! Thank you for getting in touch.');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       },
       (error) => {
@@ -38,6 +38,16 @@ const Footer = () => {
     setEmail('');
   };
   const currentYear = new Date().getFullYear();
+
+  // Scroll to the specified section
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      
+    }
+    document.querySelector("section").style.overflow = "auto";
+  };
   return (
     <footer>
       <div className="col-1">
@@ -63,16 +73,16 @@ const Footer = () => {
       <div className="col-2">
         <h3>Links</h3>
         <li>
-          <a href="#">About</a>
+          <p onClick={() => scrollToSection("about_me")}>About</p>
         </li>
         <li>
-          <a href="#">Projects</a>
+          <p onClick={() => scrollToSection("projects-container")}>Projects</p>
         </li>
         <li>
-          <a href="#">ToolBox</a>
+          <p onClick={() => scrollToSection("my_skills")}>Toolbox</p>
         </li>
         <li>
-          <a href="#">Blog</a>
+          <p onClick={() => scrollToSection("contact-container")}>Contact</p>
         </li>
       </div>
       <div className="col-3">
@@ -82,14 +92,14 @@ const Footer = () => {
           stories, expert insights, and the latest trends
         </p>
         <form ref={form} onSubmit={sendEmail}>
-        <input
-              type="email"
-              placeholder="Email address"
-              name="user_email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
+          <input
+            type="email"
+            placeholder="Email address"
+            name="user_email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
           <button type="submit">
             SUBSCRIBE
             <FaLongArrowAltRight />

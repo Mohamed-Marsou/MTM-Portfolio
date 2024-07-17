@@ -65,8 +65,9 @@ footer {
         flex-direction: column;
 
         li {
-            margin-top: 1.5rem;
-            a:hover {
+            margin-top: 1rem;
+            p{font-size: 1rem;cursor: pointer;}
+            p:hover {
                 color: #fff;
             }
         }

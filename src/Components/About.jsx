@@ -1,6 +1,6 @@
 import '../scss/About.scss';
 import myImg from '../assets/images/my-pic.webp'
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 
 
@@ -27,7 +27,7 @@ const About = () => {
         document.body.style.overflow = 'auto';
     };
     return (
-        <div className='about_me'>
+        <div className='about_me' id='about_me'>
             <div className='ctx'>
                 <h5>Hi there!</h5>
                 <span>I'm</span>

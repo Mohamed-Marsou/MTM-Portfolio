@@ -91,7 +91,32 @@ const projectsData = [
     ],
   },
   {
-    id: 4,
+    "id": 4,
+    "title": "Pizza Order App",
+    "slug": "pizza-order-app",
+    "tag": "#React, #JavaScript, #Web Development",
+    "intro": "Pizza Order App is a React application that allows users to fetch pizzas from an API, add pizzas to their cart, and proceed to checkout. This side project demonstrates the functionality of a pizza ordering system.",
+    "description": `Pizza Order App is a React application that allows users to fetch pizzas from an API, add pizzas to their cart, and proceed to checkout. This side project demonstrates the functionality of a pizza ordering system.
+  
+    In creating the Pizza Order App, the focus was on utilizing React and JavaScript to develop a seamless and user-friendly experience. This project provided valuable experience in handling API integrations, state management, and responsive UI design. The main objective was to ensure a smooth and intuitive user experience from browsing pizzas to completing the checkout process.
+  
+    Developing the Pizza Order App involved leveraging React's component-based architecture and state management capabilities. This project highlighted the importance of creating a responsive and interactive user interface, ensuring the app remains engaging and easy to use.`,
+    "coverImg": "/projects/Pizza-app/logo.png",
+    "secondaryImg": "/projects/Pizza-app/logo.png",
+    "date": "16 May 2024",
+    "hostLink": "",
+    "githubLink": "",
+    "techIcons": ["/icons/icons8-react-native-48.png", "/icons/icons8-javascript-48.png"],
+    "images": [
+      "/projects/Pizza-app/Pizza (1).png",
+      "/projects/Pizza-app/Pizza (2).png",
+      "/projects/Pizza-app/Pizza (3).png",
+      "/projects/Pizza-app/Pizza (4).png", 
+      "/projects/Pizza-app/Pizza (5).png"
+    ]
+  },
+  {
+    id: 5,
     title: "Etch-A-Sketch ",
     slug: "etch-a-sketch-javascript-game",
     tag: "#JavaScript , #VanillaJS , #Game Development ",
@@ -113,7 +138,7 @@ const projectsData = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Sign-Up / Sign-In ",
     slug: "sign-up-sign-in-web-development-challenge",
     tag: "#JavaScript , #Web Development , #Odin Project , #UI/UX",
@@ -133,7 +158,7 @@ const projectsData = [
     images: ["/projects/Odin-signup/snapshot.webp"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Odysee ",
     slug: "odysee-ecommerce-website-html-css-javascript",
     tag: ", #HTML , #CSS , #JavaScript , #UI/UX",
@@ -153,7 +178,7 @@ const projectsData = [
   },
   
   {
-    id: 7,
+    id: 8,
     "title": "Worddy - Word Search Web App",
     "slug": "worddy-web-app-vuejs",
     "tag": "#JavaScript , #Vue.js , #Web Development , #API Integration , #UI/UX",
