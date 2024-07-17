@@ -6,13 +6,13 @@ const projectsData = [
     tag: "#Full Stack , #Shopify , #UI/UX",
     //intro
     intro:
-      "Deverda is a sophisticated e-commerce website developed for a cosmetics brand using Shopify, a leading CMS for commerce. This project allowed me to gain valuable experience with Shopify's extensive capabilities. The main objective was to create the best possible UI/UX while implementing user behavior tracking to ensure the website could be continuously updated to meet user needs. This approach ensured a dynamic, user-centered shopping experience that adapts and improves based on user interactions and feedback.",
+      "Deverda is an elegant and user-centric e-commerce platform crafted for a high-end cosmetics brand using Shopify. This project provided deep insights into Shopify's extensive features and highlighted the importance of seamless UI/UX design. By incorporating user behavior tracking, we ensured the platform remains adaptive, continuously evolving to meet customer needs and preferences, delivering an engaging and personalized shopping experience.",
     //description
-    description: `Deverda is a sophisticated e-commerce website developed for a cosmetics brand using Shopify, a leading CMS for commerce. This project allowed me to gain valuable experience with Shopify and its extensive capabilities. The main objective was to create the best possible UI/UX while also implementing user behavior tracking to ensure the website could be continuously updated to meet user needs.
+    description: `Deverda is a refined e-commerce website tailored for a prestigious cosmetics brand, leveraging the robust capabilities of Shopify. This project offered significant experience in utilizing Shopify's comprehensive suite of tools to create a top-notch online shopping experience. The primary focus was on developing an intuitive and visually appealing UI/UX that not only attracts users but also keeps them engaged.
 
-    In creating Deverda, a sophisticated e-commerce platform for a renowned cosmetics brand, the utilization of Shopify, a premier CMS for commerce, was paramount. This endeavor provided me with significant experience in leveraging Shopify's comprehensive features and capabilities. The primary goal was to design an exceptional UI/UX, coupled with the integration of user behavior tracking mechanisms to facilitate ongoing updates tailored to user preferences.
+    To achieve this, we integrated advanced user behavior tracking mechanisms. These tools allow for real-time monitoring and analysis of user interactions, providing valuable insights that drive continuous improvement of the website. This ensures that the platform remains responsive to the evolving preferences and needs of its users, creating a dynamic and personalized shopping environment.
     
-    Developing Deverda, an advanced e-commerce site for a high-profile cosmetics brand, involved harnessing the power of Shopify, an industry-leading CMS for commerce. Through this project, I gained profound insights into Shopify's robust functionalities. The core objective was to engineer a superior UI/UX, incorporating user behavior tracking to ensure the website remains dynamically responsive to evolving user needs.`,
+    In building Deverda, the emphasis was on harnessing Shopify's strengths to deliver a seamless, efficient, and aesthetically pleasing e-commerce experience. The project underscored the critical role of adaptive design and user feedback in maintaining a high level of customer satisfaction and engagement.`,
 
     coverImg: "/projects/deverda/logo.jpg",
     secondaryImg: "/projects/deverda/logo.jpg",
@@ -33,37 +33,36 @@ const projectsData = [
   },
   {
     id: 2,
-    "title": "Vivic",
-    "slug": "vivic-ecommerce-website",
-    "tag": "  #Laravel , #Vue.js, #PostgreSQL , #WordPress , #WooCommerce ",
-    "intro": "Vivic is a complex e-commerce website developed using Laravel, Vue.js, SCSS, PostgreSQL, and WordPress WooCommerce. The project integrates Stripe and PayPal for payments, with WooCommerce acting as a middleman between the store and another database. The site ensures seamless synchronization of all orders and product storage using a custom algorithm, and the front-end, built with Vue.js and Pinia for state management, offers a beautiful and responsive UI.",
-    "description": `Vivic is a complex e-commerce website developed using Laravel, Vue.js, SCSS, PostgreSQL, and WordPress WooCommerce. The project integrates Stripe and PayPal for payments, with WooCommerce acting as a middleman between the store and another database. The site ensures seamless synchronization of all orders and product storage using a custom algorithm, and the front-end, built with Vue.js and Pinia for state management, offers a beautiful and responsive UI.
-  
-    In developing Vivic, the focus was on leveraging Laravel, Vue.js, SCSS, PostgreSQL, and WordPress WooCommerce to create a robust and efficient e-commerce platform. This project provided significant experience in integrating multiple technologies and payment gateways. The primary goal was to design a responsive and visually appealing UI/UX while ensuring seamless data synchronization and efficient state management.
-    
-    Creating Vivic involved harnessing the capabilities of Laravel, Vue.js, SCSS, PostgreSQL, and WordPress WooCommerce to deliver a complex and high-performing e-commerce website. Through this project, I gained valuable insights into multi-technology integration, custom algorithm development for synchronization, and effective state management using Pinia. The core objective was to engineer a responsive and user-friendly UI/UX, ensuring the website operates smoothly and efficiently.`,
+    title: "Vivic",
+    slug: "vivic-ecommerce-website",
+    tag: "  #Laravel , #Vue.js, #PostgreSQL , #WordPress , #WooCommerce ",
+    intro:
+      "Vivic stands as a sophisticated e-commerce powerhouse, meticulously crafted using Laravel, Vue.js, SCSS, PostgreSQL, and WordPress WooCommerce. Seamlessly integrating Stripe and PayPal for payments, with WooCommerce bridging connections between the store and an external database, this project boasts a custom synchronization algorithm for flawless order and product management. Front-end excellence shines through Vue.js and Pinia, offering a visually stunning, responsive, and intuitive user interface.",
+    description: `Vivic represents a pinnacle in e-commerce development, leveraging Laravel, Vue.js, SCSS, PostgreSQL, and WordPress WooCommerce to deliver a robust and feature-rich online platform. This project epitomizes the integration of diverse technologies and payment gateways, ensuring seamless transaction processing through Stripe and PayPal. WooCommerce serves as a pivotal link between the store and an external database, facilitated by a bespoke synchronization algorithm that guarantees efficient order and product management.
+
+    The development of Vivic focused on achieving optimal performance and user experience. Insights gained included mastering multi-technology integration, crafting custom synchronization algorithms, and implementing state-of-the-art UI/UX principles with Vue.js and Pinia. The primary objective was to engineer a responsive and visually appealing front-end interface, complemented by efficient data synchronization and state management. Vivic exemplifies excellence in modern e-commerce solutions, setting a new standard in functionality and user engagement.`,
     coverImg: "/projects/Vivic/Vivic.png",
     secondaryImg: "/projects/Vivic/Vivic.png",
     date: "03 Fub 2022",
     hostLink: "",
     githubLink: "",
-    techIcons: ["/icons/icons8-javascript-48.png"],
+    techIcons: ["/icons/icons8-laravel-48.png","/icons/icons8-vue-js-48.png","/icons/icons8-postgresql-48.png"],
     images: [
-    "/projects/Vivic/Vivic (8).webp",
-    "/projects/Vivic/Vivic (7).webp",
-    "/projects/Vivic/Vivic (6).webp",
-    "/projects/Vivic/Vivic (11).webp",
-    "/projects/Vivic/Vivic (1).webp",
-    "/projects/Vivic/Vivic (2).webp",
-    "/projects/Vivic/Vivic (3).webp",
-    "/projects/Vivic/Vivic (4).webp",
-    "/projects/Vivic/Vivic (5).webp",
-    "/projects/Vivic/Vivic (9).webp",
-    "/projects/Vivic/Vivic (10).webp",
-    "/projects/Vivic/Vivic (12).webp",
-    "/projects/Vivic/Vivic (13).webp",
-    "/projects/Vivic/Vivic (14).webp",
-  ],
+      "/projects/Vivic/Vivic (8).webp",
+      "/projects/Vivic/Vivic (7).webp",
+      "/projects/Vivic/Vivic (6).webp",
+      "/projects/Vivic/Vivic (11).webp",
+      "/projects/Vivic/Vivic (1).webp",
+      "/projects/Vivic/Vivic (2).webp",
+      "/projects/Vivic/Vivic (3).webp",
+      "/projects/Vivic/Vivic (4).webp",
+      "/projects/Vivic/Vivic (5).webp",
+      "/projects/Vivic/Vivic (9).webp",
+      "/projects/Vivic/Vivic (10).webp",
+      "/projects/Vivic/Vivic (12).webp",
+      "/projects/Vivic/Vivic (13).webp",
+      "/projects/Vivic/Vivic (14).webp",
+    ],
   },
   {
     id: 3,
@@ -71,52 +70,83 @@ const projectsData = [
     slug: "easytech-ecommerce",
     tag: "#Full Stack , #Node.js , #Express.js , #MongoDB , #UI/UX",
     intro:
-      "EasyTech is a high-performance e-commerce website developed using Node.js, Express.js, and MongoDB. This project emphasizes speed and efficiency, leveraging the capabilities of Express.js to ensure a swift and seamless shopping experience. The main objective was to create a fast and responsive UI/UX that enhances user satisfaction and engagement.",
-    description: `EasyTech is a high-performance e-commerce website developed using Node.js, Express.js, and MongoDB. This project emphasizes speed and efficiency, leveraging the capabilities of Express.js to ensure a swift and seamless shopping experience. The main objective was to create a fast and responsive UI/UX that enhances user satisfaction and engagement.
-  
-  In building EasyTech, an advanced e-commerce platform, the focus was on utilizing Node.js, Express.js, and MongoDB to deliver a high-speed, efficient user experience. This project provided me with significant experience in exploiting the strengths of these technologies. The primary goal was to design a quick and responsive UI/UX, ensuring the website performs optimally and meets user expectations.
-  
-  Developing EasyTech, a cutting-edge e-commerce site, involved harnessing the power of Node.js, Express.js, and MongoDB. Through this project, I gained profound insights into these robust technologies. The core objective was to engineer a fast and efficient UI/UX, ensuring the website remains highly responsive to user interactions and needs.`,
+      "EasyTech emerges as a high-performance e-commerce marvel powered by Node.js, Express.js, and MongoDB. This project is meticulously designed to prioritize speed and efficiency, harnessing Express.js to deliver a swift and seamless shopping journey. The primary focus is on crafting a responsive UI/UX that elevates user satisfaction and engagement to new heights.",
+    description: `EasyTech represents a pinnacle in e-commerce innovation, leveraging Node.js, Express.js, and MongoDB to achieve unparalleled speed and efficiency. This project exemplifies the seamless integration of robust technologies, with Express.js playing a pivotal role in ensuring rapid transaction processing and a seamless user experience.
+
+    The development of EasyTech centered on optimizing performance and user interaction. It provided invaluable experience in leveraging Node.js, Express.js, and MongoDB's capabilities to deliver a fast, responsive, and scalable e-commerce platform. The primary goal was to engineer a UI/UX that not only meets but exceeds user expectations, ensuring optimal performance and user engagement.
+    
+    Developing EasyTech underscored the significance of Node.js, Express.js, and MongoDB in modern web development. Insights gained included mastering efficient data handling, optimizing server-side operations, and enhancing user experience through responsive design principles. EasyTech sets a benchmark for high-performance e-commerce solutions, offering a seamless shopping experience that prioritizes speed, efficiency, and user satisfaction.`,
     coverImg: "/projects/easytech/easytech.png",
     secondaryImg: "/projects/easytech/easytech.png",
     date: "27 June 2022",
     hostLink: "",
     githubLink: "",
-    techIcons: ["/icons/icons8-nodejs-48.png", "/icons/icons8-mongodb-48.png"],
+    techIcons: ["/icons/icons8-nodejs-48.png","/icons/icons8-express-js-40.png", "/icons/icons8-mongodb-48.png"],
     images: [
       "/projects/easytech/picfour.webp",
       "/projects/easytech/picone.webp",
       "/projects/easytech/picthree.webp",
-      "/projects/easytech/pictwo.webp"
+      "/projects/easytech/pictwo.webp",
     ],
   },
   {
-    "id": 4,
-    "title": "Pizza Order App",
-    "slug": "pizza-order-app",
-    "tag": "#React, #JavaScript, #Web Development",
-    "intro": "Pizza Order App is a React application that allows users to fetch pizzas from an API, add pizzas to their cart, and proceed to checkout. This side project demonstrates the functionality of a pizza ordering system.",
-    "description": `Pizza Order App is a React application that allows users to fetch pizzas from an API, add pizzas to their cart, and proceed to checkout. This side project demonstrates the functionality of a pizza ordering system.
-  
-    In creating the Pizza Order App, the focus was on utilizing React and JavaScript to develop a seamless and user-friendly experience. This project provided valuable experience in handling API integrations, state management, and responsive UI design. The main objective was to ensure a smooth and intuitive user experience from browsing pizzas to completing the checkout process.
-  
-    Developing the Pizza Order App involved leveraging React's component-based architecture and state management capabilities. This project highlighted the importance of creating a responsive and interactive user interface, ensuring the app remains engaging and easy to use.`,
-    "coverImg": "/projects/Pizza-app/logo.png",
-    "secondaryImg": "/projects/Pizza-app/logo.png",
-    "date": "16 May 2024",
-    "hostLink": "",
-    "githubLink": "",
-    "techIcons": ["/icons/icons8-react-native-48.png", "/icons/icons8-javascript-48.png"],
-    "images": [
+    id: 4,
+    title: "Pizza Order App",
+    slug: "pizza-order-app",
+    tag: "#React, #JavaScript, #Web Development",
+    intro:
+      "The Pizza Order App is a dynamic React application designed for seamless pizza ordering. Users can explore a variety of pizzas fetched from an API, customize their selections, and effortlessly proceed to checkout. This side project showcases the essential features of a modern, user-friendly pizza ordering system.",
+    description: `The Pizza Order App is a React-based application that streamlines the pizza ordering process. Built with a focus on user experience, this project integrates API fetching, state management, and responsive UI design to deliver a smooth and intuitive ordering experience.
+
+    Utilizing React's component-based architecture and robust state management capabilities, the app ensures efficient data handling and dynamic user interactions. The primary objective was to create a responsive and interactive interface that simplifies pizza selection and checkout.
+    
+    Developing the Pizza Order App provided valuable insights into modern web development practices, emphasizing the importance of seamless user interfaces and efficient data flow. This project serves as a testament to the capabilities of React in building engaging and functional applications tailored for specific user needs.`,
+    coverImg: "/projects/Pizza-app/logo.png",
+    secondaryImg: "/projects/Pizza-app/logo.png",
+    date: "16 May 2024",
+    hostLink: "",
+    githubLink: "",
+    techIcons: [
+      "/icons/icons8-react-native-48.png",
+      "/icons/icons8-javascript-48.png",
+    ],
+    images: [
       "/projects/Pizza-app/Pizza (1).png",
       "/projects/Pizza-app/Pizza (2).png",
       "/projects/Pizza-app/Pizza (3).png",
-      "/projects/Pizza-app/Pizza (4).png", 
-      "/projects/Pizza-app/Pizza (5).png"
-    ]
+      "/projects/Pizza-app/Pizza (4).png",
+      "/projects/Pizza-app/Pizza (5).png",
+    ],
   },
   {
     id: 5,
+    title: "MTM Weather App",
+    slug: "mtm-weather-app",
+    tag: "#React, #JavaScript, #Web Development",
+    intro:
+      "The MTM Weather App represents a cutting-edge web application developed with React. It seamlessly fetches and displays real-time weather data from an API, offering users up-to-date weather information at their fingertips. This project is dedicated to delivering a sleek and intuitive user interface that ensures accurate and reliable weather updates.",
+    description: `The MTM Weather App is a modern web application built using React, designed to provide users with real-time weather updates sourced from an external API. This project showcases proficiency in API integration, state management, and responsive UI design, emphasizing a seamless and user-friendly experience.
+
+    Leveraging React's component-based architecture and robust state management capabilities, the app ensures efficient data handling and dynamic user interactions. The primary goal was to engineer a responsive and engaging user interface that simplifies weather information access and enhances user experience.
+    
+    Developing the MTM Weather App provided valuable insights into React's capabilities for developing interactive and dynamic web applications. It underscored the importance of intuitive design and efficient data presentation in modern web development, ensuring users receive accurate and timely weather forecasts in a user-friendly environment.`,
+    coverImg: "/projects/Weather app/Screenshot (285).png",
+    secondaryImg: "/projects/Weather app/Screenshot (285).png",
+    date: "29 April 2023",
+    hostLink: "",
+    githubLink: "",
+    techIcons: [
+      "/icons/icons8-react-native-48.png",
+      "/icons/icons8-javascript-48.png",
+      "/icons/icons8-api-48.png",
+    ],
+    images: [
+      "/projects/Weather app/Screenshot (286).png",
+      "/projects/Weather app/Screenshot (285).png",
+    ],
+  },
+  {
+    id: 6,
     title: "Etch-A-Sketch ",
     slug: "etch-a-sketch-javascript-game",
     tag: "#JavaScript , #VanillaJS , #Game Development ",
@@ -133,12 +163,10 @@ const projectsData = [
     hostLink: "",
     githubLink: "",
     techIcons: ["/icons/icons8-javascript-48.png"],
-    images: [
-      "/projects/Etch-A-Sketch/184960663-f9fafc6d-086a-4d6b-9af.webp",
-    ],
+    images: ["/projects/Etch-A-Sketch/184960663-f9fafc6d-086a-4d6b-9af.webp"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Sign-Up / Sign-In ",
     slug: "sign-up-sign-in-web-development-challenge",
     tag: "#JavaScript , #Web Development , #Odin Project , #UI/UX",
@@ -158,7 +186,7 @@ const projectsData = [
     images: ["/projects/Odin-signup/snapshot.webp"],
   },
   {
-    id: 7,
+    id: 8,
     title: "Odysee ",
     slug: "odysee-ecommerce-website-html-css-javascript",
     tag: ", #HTML , #CSS , #JavaScript , #UI/UX",
@@ -174,27 +202,33 @@ const projectsData = [
     hostLink: "",
     githubLink: "",
     techIcons: ["/icons/icons8-javascript-48.png"],
-    images: ["/projects/Odysee/odysee1.webp","/projects/Odysee/odysee2.webp","/projects/Odysee/odysee3.webp","/projects/Odysee/odysee4.webp",],
+    images: [
+      "/projects/Odysee/odysee1.webp",
+      "/projects/Odysee/odysee2.webp",
+      "/projects/Odysee/odysee3.webp",
+      "/projects/Odysee/odysee4.webp",
+    ],
   },
-  
+
   {
     id: 8,
-    "title": "Worddy - Word Search Web App",
-    "slug": "worddy-web-app-vuejs",
-    "tag": "#JavaScript , #Vue.js , #Web Development , #API Integration , #UI/UX",
-    "intro": "Worddy is a simple web app developed using Vue.js. It integrates an API to search for words and provides audio pronunciations along with definitions. The project features an awesome UI, delivering a straightforward and user-friendly experience.",
-    "description": `Worddy is a simple web app developed using Vue.js. It integrates an API to search for words and provides audio pronunciations along with definitions. The project features an awesome UI, delivering a straightforward and user-friendly experience.
+    title: "Worddy - Word Search Web App",
+    slug: "worddy-web-app-vuejs",
+    tag: "#JavaScript , #Vue.js , #Web Development , #API Integration , #UI/UX",
+    intro:
+      "Worddy is a simple web app developed using Vue.js. It integrates an API to search for words and provides audio pronunciations along with definitions. The project features an awesome UI, delivering a straightforward and user-friendly experience.",
+    description: `Worddy is a simple web app developed using Vue.js. It integrates an API to search for words and provides audio pronunciations along with definitions. The project features an awesome UI, delivering a straightforward and user-friendly experience.
 
     In developing Worddy, the focus was on utilizing Vue.js to create a web app that simplifies the process of looking up words and understanding their meanings. This project provided me with significant experience in API integration and creating intuitive user interfaces. The primary goal was to design a clean and efficient UI/UX, ensuring users can easily search for and learn new words.
 
     Creating Worddy involved leveraging Vue.js and integrating an API to offer audio pronunciations and definitions for searched words. Through this project, I gained valuable insights into building simple yet effective web applications. The core objective was to engineer an attractive and responsive UI/UX, ensuring the app is both functional and enjoyable to use.`,
-      coverImg: "/projects/Worddy/Worddy.png",
-      secondaryImg: "/projects/Worddy/Worddy.png",
-      date: "27 June 2022",
-      hostLink: "",
-      githubLink: "",
-      techIcons: ["/icons/icons8-javascript-48.png"],
-      images: ["/projects/Worddy/w.webp"],
-    },
+    coverImg: "/projects/Worddy/Worddy.png",
+    secondaryImg: "/projects/Worddy/Worddy.png",
+    date: "27 June 2022",
+    hostLink: "",
+    githubLink: "",
+    techIcons: ["/icons/icons8-javascript-48.png"],
+    images: ["/projects/Worddy/w.webp"],
+  },
 ];
 export default projectsData;
