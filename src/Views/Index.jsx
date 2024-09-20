@@ -10,10 +10,11 @@ import Footer from "../Components/Footer";
 import Projects from "./Projects";
 import Project from "./Project";
 import ScrollToTop from "../js/scrollToTop";
-
+import MetaPixel from "../utils/meta/Pixel";
 const Main = () => {
   return (
     <Router>
+      <MetaPixel />
       <ScrollToTop />
       <section>
         <Nav />
